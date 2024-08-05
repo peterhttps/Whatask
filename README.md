@@ -27,9 +27,26 @@ $ docker-compose build
 $ docker-compose up
 ```
 
-### Tests
+### Comandos
 
-Para testar a aplicação
+```bash
+- add TITLE --description DESCRIPTION   Add a new task with a title and optional description.
+- delete TASK_ID                        Delete a task by its ID.
+- list                                  List all incomplete tasks.
+- list --completed                      List all tasks or only completed tasks.
+- complete TASK_ID                      Mark a task as completed.
+- update TASK_ID --title TITLE --description DESCRIPTION  Update an existing task's title and description.
+```
+
+Para mais informações
+
+```bash
+$ python -m app.cli help
+```
+
+### Testes
+
+Para executar os testes unitários
 
 ```bash
 $ pytest

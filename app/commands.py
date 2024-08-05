@@ -73,3 +73,18 @@ def update_task(task_id, new_title, new_description):
             (new_title, new_description, task_id)
         )
         console.print(f"[green]Task {task_id} updated.[/green]")
+
+def help_command():
+    help_text = """
+[bold magenta]Whatask CLI - Task Management System[/bold magenta]
+Commands:
+  [green]add[/green] TITLE --description DESCRIPTION   Add a new task with a title and optional description.
+  [green]delete[/green] TASK_ID                        Delete a task by its ID.
+  [green]list[/green]                                  List all incomplete tasks.
+  [green]list[/green] --completed                      List all tasks or only completed tasks.
+  [green]complete[/green] TASK_ID                      Mark a task as completed.
+  [green]update[/green] TASK_ID --title TITLE --description DESCRIPTION  Update an existing task's title and description.
+
+You can always use 'help' for more information on command usage.
+"""
+    console.print(help_text, markup=True)

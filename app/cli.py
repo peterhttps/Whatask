@@ -1,5 +1,5 @@
 import click
-from app.commands import add_task, delete_task, list_tasks, complete_task, update_task
+from app.commands import add_task, delete_task, list_tasks, complete_task, update_task, help_command
 from app.database import initialize_db
 
 @click.group()
@@ -7,6 +7,11 @@ def cli():
     """Whatask - A simple task management system."""
     initialize_db() 
     pass
+
+@cli.command()
+def help():
+    """Show this help message and exit."""
+    help_command()
 
 @cli.command()
 @click.argument('title')
