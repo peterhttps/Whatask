@@ -13,11 +13,11 @@ Dentro das tecnologias sugeridas este projeto utiliza Click para CLI e PostegreS
 ### Setando o ambiente
 
 ```bash
-$ git clone repo name # Clonando o repositório
-$ cd repo name
+$ git clone https://github.com/peterhttps/Whatask # Clonando o repositório
+$ cd Whatask
 ```
 
-Crie um arquivo .env e copie para ele o conteúdo de .env.example
+Crie um arquivo .env na raiz do projeto e copie para ele o conteúdo de .env.example
 
 ```bash
 $ python -m venv venv
