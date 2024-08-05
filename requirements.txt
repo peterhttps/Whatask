@@ -1,0 +1,9 @@
+click
+psycopg2-binary
+flask
+pytest
+watchdog
+python-dotenv
+rich
+pytest
+pytest-mock
